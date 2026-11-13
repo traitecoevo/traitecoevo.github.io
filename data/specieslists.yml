@@ -1,0 +1,45 @@
+# Cards for the species lists & change detection family section of index.qmd, in display order.
+#
+# Each tool (only `name` and `description` are required). The same fields are used in every card file (data/austraits.yml, plant.yml, havplot.yml, ecoacoustics.yml, specieslists.yml, packages.yml).
+#   name         display name
+#   kind         short label: "R package", "Web app", "Database", "C++ library", ...
+#   status       stable | developing | experimental   (shown as a badge; omit for none)
+#   description  one or two sentences (plain text)
+#   repo         repository name under github.com/traitecoevo (adds a GitHub link)
+#   private      true if the repository is not public yet (shows "Not yet public" instead of a GitHub link)
+#   home         main link: docs site, website or app (the card title links here; falls back to the repo)
+#   home_label   label for the home link (default "Docs")
+#   logo         file name in assets/logos/ (otherwise a two-letter tile is drawn)
+#   cran         true if on CRAN (adds a CRAN link)
+#   universe     true if on traitecoevo.r-universe.dev (adds an R-universe link)
+#   package      R package name, if it differs from `name` (used for the CRAN and R-universe links)
+#   links        extra links, as a list of {label, url}
+
+- name: infinitylists
+  kind: R package · Web app
+  status: stable
+  description: Generate place-based species lists for anywhere in the world, from collection data and iNaturalist records in the ALA and GBIF.
+  repo: infinitylists
+  home: https://unsw.shinyapps.io/infinitylists/
+  home_label: Web app
+  logo: infinitylists.png
+  universe: true
+- name: royalNP_alltime_flora
+  kind: Versioned data · R
+  status: stable
+  description: The "all time" plant species list for Royal National Park, NSW, with a script that checks the ALA for candidate new discoveries since the list was made.
+  repo: royalNP_alltime_flora
+- name: yosemiteNP_alltime_flora
+  kind: Versioned data · R
+  status: stable
+  description: The "all time" plant species list for Yosemite National Park, California, with a script that checks GBIF for candidate new discoveries since the list was made.
+  repo: yosemiteNP_alltime_flora
+- name: Yosemite_Royal_longunobserved_newdiscovery
+  kind: Analysis
+  status: developing
+  description: Compares Yosemite and Royal National Parks to track which species have gone long unobserved and which are new discoveries, through time.
+  repo: Yosemite_Royal_longunobserved_newdiscovery
+- name: lost_flowers
+  kind: Thesis code · Data
+  description: An honours thesis on plant species in Royal National Park that have long gone unrecorded, with the data, code and figures behind it.
+  repo: lost_flowers

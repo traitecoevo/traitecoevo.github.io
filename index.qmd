@@ -25,6 +25,20 @@ listing:
     page-size: 500
     filter-ui: false
     sort-ui: false
+  - id: ecoacoustics-tools
+    contents: data/ecoacoustics.yml
+    template: _templates/cards.ejs
+    sort: false
+    page-size: 500
+    filter-ui: false
+    sort-ui: false
+  - id: specieslists-tools
+    contents: data/specieslists.yml
+    template: _templates/cards.ejs
+    sort: false
+    page-size: 500
+    filter-ui: false
+    sort-ui: false
   - id: packages-tools
     contents: data/packages.yml
     template: _templates/cards.ejs
@@ -62,6 +76,8 @@ listing:
       <li><a href="#austraits">AusTraits family</a></li>
       <li><a href="#plant">plant family</a></li>
       <li><a href="#havplot">HAVPlot family</a></li>
+      <li><a href="#ecoacoustics">ecoacoustics family</a></li>
+      <li><a href="#specieslists">Species lists &amp; change</a></li>
       <li><a href="#packages">Apps &amp; packages</a></li>
       <li><a href="#papers">Papers &amp; code</a></li>
     </ul>
@@ -126,14 +142,44 @@ HAVPlot, the Harmonised Australian Vegetation Plot dataset, brings vegetation pl
 ::::
 :::::
 
+::::: {#ecoacoustics .family .family-ecoacoustics}
+:::: wrap
+::: family-head
+<p class="tagline"><span class="num">04</span>Nature sounds</p>
+
+<h2>ecoacoustics family</h2>
+
+Tools for finding species in sound recordings: gathering recordings from citizen-science archives, running and combining automated detectors such as BirdNET and Google Perch, and turning their detections into data for analysis.
+:::
+
+::: {#ecoacoustics-tools}
+:::
+::::
+:::::
+
+::::: {#specieslists .family .family-specieslists}
+:::: wrap
+::: family-head
+<p class="tagline"><span class="num">05</span>Who lives where, and what has changed</p>
+
+<h2>Species lists &amp; change detection</h2>
+
+Tools for building species lists for any place from herbarium collections and citizen-science records, and for tracking how those lists change: new discoveries, species long gone unobserved, and the curation of "all time" floras for national parks.
+:::
+
+::: {#specieslists-tools}
+:::
+::::
+:::::
+
 ::::: {#packages .family}
 :::: wrap
 ::: family-head
-<p class="tagline"><span class="num">04</span>Everything else</p>
+<p class="tagline"><span class="num">06</span>Everything else</p>
 
 <h2>Apps &amp; packages</h2>
 
-Standalone apps, R and Python packages, and data packages for statistics, remote sensing, ecoacoustics and more.
+Standalone apps, R packages and data packages for statistics, remote sensing, animal movement and more.
 :::
 
 ::: {#packages-tools}
@@ -153,7 +199,7 @@ Standalone apps, R and Python packages, and data packages for statistics, remote
 ::::: {#papers .family}
 :::: wrap
 ::: family-head
-<p class="tagline"><span class="num">05</span>Reproducible research</p>
+<p class="tagline"><span class="num">07</span>Reproducible research</p>
 
 <h2>Papers &amp; code</h2>
 

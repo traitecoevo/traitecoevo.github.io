@@ -122,14 +122,20 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 600; letter-spacing: -0.01e
 .family-austraits { --fam: #b4602a; }
 .family-plant { --fam: #3f7d4e; }
 .family-havplot { --fam: #3b6e8f; }
+.family-ecoacoustics { --fam: #7a4f8f; }
+.family-specieslists { --fam: #2f7a76; }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) .family-austraits { --fam: #e7a15f; }
   :root:not([data-theme="light"]) .family-plant { --fam: #8fd3ae; }
   :root:not([data-theme="light"]) .family-havplot { --fam: #8cc4e6; }
+  :root:not([data-theme="light"]) .family-ecoacoustics { --fam: #cfa8e3; }
+  :root:not([data-theme="light"]) .family-specieslists { --fam: #86d1c9; }
 }
 :root[data-theme="dark"] .family-austraits { --fam: #e7a15f; }
 :root[data-theme="dark"] .family-plant { --fam: #8fd3ae; }
 :root[data-theme="dark"] .family-havplot { --fam: #8cc4e6; }
+:root[data-theme="dark"] .family-ecoacoustics { --fam: #cfa8e3; }
+:root[data-theme="dark"] .family-specieslists { --fam: #86d1c9; }
 .family-head { margin-bottom: 28px; max-width: 760px; }
 .tagline {
   margin: 0 0 10px; font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: var(--fam);
