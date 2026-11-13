@@ -53,7 +53,6 @@
   description: The AusTraits Plant Dictionary, with reviewed definitions for nearly 500 plant traits and machine-readable endpoints.
   repo: APD
   home: https://traitecoevo.github.io/APD/
-  universe: true
 - name: APCalign
   kind: R package · Web app
   status: stable

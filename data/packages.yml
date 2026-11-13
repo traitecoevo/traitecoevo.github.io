@@ -51,6 +51,7 @@
   repo: earthtones
   home: https://traitecoevo.github.io/earthtones/
   cran: true
+  universe: true
 - name: baad.data
   kind: Data package
   status: stable
