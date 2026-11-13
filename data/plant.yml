@@ -1,6 +1,6 @@
 # Cards for the plant family section of index.qmd, in display order.
 #
-# Each tool (only `name` and `description` are required). The same fields are used in every card file (data/austraits.yml, plant.yml, havplot.yml, packages.yml).
+# Each tool (only `name` and `description` are required). The same fields are used in every card file (data/austraits.yml, plant.yml, havplot.yml, ecoacoustics.yml, specieslists.yml, packages.yml).
 #   name         display name
 #   kind         short label: "R package", "Web app", "Database", "C++ library", ...
 #   status       stable | developing | experimental   (shown as a badge; omit for none)

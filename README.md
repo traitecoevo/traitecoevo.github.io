@@ -13,6 +13,8 @@ Tools are listed in YAML files under `data/`, one file per section:
 | `data/austraits.yml` | AusTraits family |
 | `data/plant.yml` | plant family |
 | `data/havplot.yml` | HAVPlot family |
+| `data/ecoacoustics.yml` | ecoacoustics family |
+| `data/specieslists.yml` | Species lists & change detection family |
 | `data/packages.yml` | Apps & packages (current) |
 | `data/retired.yml` | Apps & packages, retired list |
 | `data/papers.yml` | Papers & code |

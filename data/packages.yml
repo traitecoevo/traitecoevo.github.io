@@ -1,15 +1,6 @@
 # Cards for the Apps & packages section of index.qmd (current tools), in display order.
 # Fields are documented in data/austraits.yml.
 
-- name: infinitylists
-  kind: R package · Web app
-  status: stable
-  description: Generate place-based species lists for anywhere in the world, from collection data and iNaturalist records in the ALA and GBIF.
-  repo: infinitylists
-  home: https://unsw.shinyapps.io/infinitylists/
-  home_label: Web app
-  logo: infinitylists.png
-  universe: true
 - name: smatr
   kind: R package
   status: stable
@@ -78,25 +69,3 @@
   status: developing
   description: Standardise raw tri-axial accelerometer data and extract metrics of movement dynamics.
   repo: rabbit
-- name: birdnetprocess
-  kind: R package
-  status: developing
-  description: Process and visualise the large volumes of detections produced by BirdNET.
-  repo: birdnetprocess
-- name: ecoacoustic_utilities
-  kind: R package
-  status: developing
-  description: Download and analyse ecoacoustic recordings from iNaturalist and the Atlas of Living Australia.
-  repo: ecoacoustic_utilities
-  package: EcoacousticUtilities
-  home: https://traitecoevo.github.io/ecoacoustic_utilities/
-- name: perch-head
-  kind: Python
-  status: experimental
-  description: Train and run custom classifier heads on Google Perch embeddings, for recognising species beyond Perch's own vocabulary.
-  repo: perch-head
-- name: score-ensemble
-  kind: Python
-  status: experimental
-  description: Parameter-free, score-level ensembling of two acoustic detectors.
-  repo: score-ensemble
