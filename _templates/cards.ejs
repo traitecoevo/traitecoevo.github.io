@@ -8,6 +8,7 @@ const gh = "https://github.com/traitecoevo/";
 <% for (const t of items) {
 const repoUrl = (t.repo && !t.private) ? gh + t.repo : "";
 const mainUrl = t.home || repoUrl;
+const pkg = t.package || t.name;
 %>
 <article class="card">
 <div class="card-top">
@@ -18,7 +19,7 @@ const mainUrl = t.home || repoUrl;
 </div>
 </div>
 <p class="desc"><%= t.description %></p>
-<p class="links"><% if (t.home) { %><a href="<%- t.home %>"><%= t["home_label"] || "Docs" %></a><% } %><% for (const l of (t.links || [])) { %><a href="<%- l.url %>"><%= l.label %></a><% } %><% if (repoUrl) { %><a href="<%- repoUrl %>">GitHub</a><% } %><% if (t.private) { %><span class="private">Not yet public</span><% } %><% if (t.cran) { %><a href="https://cran.r-project.org/package=<%- t.name %>">CRAN</a><% } %><% if (t.universe) { %><a href="https://traitecoevo.r-universe.dev/<%- t.name %>">R-universe</a><% } %></p>
+<p class="links"><% if (t.home) { %><a href="<%- t.home %>"><%= t["home_label"] || "Docs" %></a><% } %><% for (const l of (t.links || [])) { %><a href="<%- l.url %>"><%= l.label %></a><% } %><% if (repoUrl) { %><a href="<%- repoUrl %>">GitHub</a><% } %><% if (t.private) { %><span class="private">Not yet public</span><% } %><% if (t.cran) { %><a href="https://cran.r-project.org/package=<%- pkg %>">CRAN</a><% } %><% if (t.universe) { %><a href="https://traitecoevo.r-universe.dev/<%- pkg %>">R-universe</a><% } %></p>
 </article>
 <% } %>
 </div>

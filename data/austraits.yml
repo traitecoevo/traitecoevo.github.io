@@ -12,6 +12,7 @@
 #   logo         file name in assets/logos/ (otherwise a two-letter tile is drawn)
 #   cran         true if on CRAN (adds a CRAN link)
 #   universe     true if on traitecoevo.r-universe.dev (adds an R-universe link)
+#   package      R package name, if it differs from `name` (used for the CRAN and R-universe links)
 #   links        extra links, as a list of {label, url}
 
 - name: AusTraits

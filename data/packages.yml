@@ -88,6 +88,7 @@
   status: developing
   description: Download and analyse ecoacoustic recordings from iNaturalist and the Atlas of Living Australia.
   repo: ecoacoustic_utilities
+  package: EcoacousticUtilities
   home: https://traitecoevo.github.io/ecoacoustic_utilities/
 - name: perch-head
   kind: Python
