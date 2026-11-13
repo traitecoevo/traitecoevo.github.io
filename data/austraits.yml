@@ -1,0 +1,83 @@
+# Cards for the AusTraits family section of index.qmd, in display order.
+#
+# Each tool (only `name` and `description` are required). The same fields are used in every card file (data/austraits.yml, plant.yml, havplot.yml, packages.yml).
+#   name         display name
+#   kind         short label: "R package", "Web app", "Database", "C++ library", ...
+#   status       stable | developing | experimental   (shown as a badge; omit for none)
+#   description  one or two sentences (plain text)
+#   repo         repository name under github.com/traitecoevo (adds a GitHub link)
+#   private      true if the repository is not public yet (shows "Not yet public" instead of a GitHub link)
+#   home         main link: docs site, website or app (the card title links here; falls back to the repo)
+#   home_label   label for the home link (default "Docs")
+#   logo         file name in assets/logos/ (otherwise a two-letter tile is drawn)
+#   cran         true if on CRAN (adds a CRAN link)
+#   universe     true if on traitecoevo.r-universe.dev (adds an R-universe link)
+#   links        extra links, as a list of {label, url}
+
+- name: AusTraits
+  kind: Database
+  status: stable
+  description: The database itself, with source data and the build for every release. Explore it through the data portal or the HTTP API.
+  home: https://austraits.org
+  home_label: Website
+  repo: austraits.build
+  links:
+  - label: Data portal
+    url: https://app.austraits.org/austraits/
+  - label: API
+    url: https://app.austraits.org/api/__docs__/
+- name: austraits
+  kind: R package
+  status: stable
+  description: Access the AusTraits database from R and wrangle data from any traits.build database.
+  repo: austraits
+  home: https://traitecoevo.github.io/austraits/
+  logo: austraits.png
+  universe: true
+- name: traits.build
+  kind: R package
+  status: stable
+  description: A workflow for harmonising trait data from diverse sources into a documented, standard structure. AusTraits is built with it.
+  repo: traits.build
+  home: https://traitecoevo.github.io/traits.build/
+  logo: traits.build.png
+  universe: true
+  links:
+  - label: Manual
+    url: https://traitecoevo.github.io/traits.build-book/
+  - label: Template
+    url: https://github.com/traitecoevo/traits.build-template
+- name: APD
+  kind: Trait dictionary
+  status: stable
+  description: The AusTraits Plant Dictionary, with reviewed definitions for nearly 500 plant traits and machine-readable endpoints.
+  repo: APD
+  home: https://traitecoevo.github.io/APD/
+  universe: true
+- name: APCalign
+  kind: R package · Web app
+  status: stable
+  description: Resolve and update the names of Australian plants against the Australian Plant Census.
+  repo: APCalign
+  home: https://traitecoevo.github.io/APCalign/
+  logo: APCalign.png
+  cran: true
+  universe: true
+  links:
+  - label: Web app
+    url: https://austraits.org/apcalign
+- name: taxonAlign
+  kind: R package
+  status: developing
+  description: Align taxon names to any taxonomic reference, and generate a reference list for any taxon group in any region.
+  repo: taxonAlign
+- name: austraits-means
+  kind: Data product
+  status: developing
+  description: Species- and community-level trait means for the Australian flora, built from AusTraits with climate and occurrence data.
+  repo: austraits-means
+- name: responses.build
+  kind: R package
+  status: experimental
+  description: An offshoot of traits.build for physiological response-curve data, such as leaf gas exchange, hydraulic vulnerability and fluorescence curves.
+  repo: responses.build

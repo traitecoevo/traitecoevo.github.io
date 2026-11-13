@@ -1,0 +1,48 @@
+# Papers & code: papers whose analyses can be reproduced from code in a public repository. Newest first.
+# Only add papers with reproducible code here; full publication lists are on our Google Scholar pages (linked in index.qmd).
+# Each item: name, repo (under github.com/traitecoevo), description, and optional `paper` (a DOI URL) or `url` (docs).
+
+- name: austraits_ms
+  repo: austraits_ms
+  description: Falster et al. (2021) AusTraits, a curated plant trait database for the Australian flora. Scientific Data.
+  paper: https://doi.org/10.1038/s41597-021-01006-6
+- name: multi_trait_succession
+  repo: multi_trait_succession
+  description: Falster et al. (2017) Multitrait successional forest dynamics enable diverse competitive coexistence. PNAS.
+  paper: https://doi.org/10.1073/pnas.1610206114
+- name: growth_trajectories
+  repo: growth_trajectories
+  description: Falster et al. How functional traits influence plant growth and shade tolerance across the life cycle.
+  paper: https://doi.org/10.1101/083451
+- name: plant_paper
+  repo: plant_paper
+  description: 'Falster et al. (2016) plant: a package for modelling forest trait ecology and evolution. Methods in Ecology and Evolution.'
+  paper: https://doi.org/10.1111/2041-210X.12525
+- name: phyndr-ms
+  repo: phyndr-ms
+  description: Pennell, FitzJohn & Cornwell (2016) A simple approach for maximizing the overlap of phylogenetic and comparative data. Methods in Ecology and Evolution.
+  paper: https://doi.org/10.1111/2041-210X.12517
+- name: baadanalysis
+  repo: baadanalysis
+  description: Duursma & Falster (2016) Leaf mass per area, not total leaf area, drives differences in above-ground biomass distribution among woody plant functional types. New Phytologist.
+  paper: https://doi.org/10.1111/nph.14033
+- name: Growth_trait_metaanalysis
+  repo: Growth_trait_metaanalysis
+  description: 'Gibert et al. (2016) On the link between functional traits and growth rate: meta-analysis shows effects change with plant size, as predicted. Journal of Ecology.'
+  paper: https://doi.org/10.1111/1365-2745.12594
+- name: modeladequacy
+  repo: modeladequacy
+  description: Pennell et al. (2015) Model adequacy and the macroevolution of angiosperm functional traits. American Naturalist.
+  paper: https://doi.org/10.1086/682022
+- name: competition_kernels
+  repo: competition_kernels
+  description: Emergent shapes of trait-based competition functions from resource-based models.
+- name: mortality_bci
+  repo: mortality_bci
+  description: A tropical tree mortality model, using Barro Colorado Island as a case study.
+- name: reproductive_allocation_kuringgai
+  repo: reproductive_allocation_kuringgai
+  description: Code reproducing papers by Lizzy Wenk on reproductive allocation in plant species of Ku-ring-gai Chase National Park.
+- name: colors_in_citizen_science
+  repo: colors_in_citizen_science
+  description: The reliability of colour data extracted from citizen-science images.

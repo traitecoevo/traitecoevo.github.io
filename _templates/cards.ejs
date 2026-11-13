@@ -1,0 +1,24 @@
+<%
+// Card grid for a listing. Item fields are documented at the top of data/austraits.yml.
+// Quarto runs this output through Markdown, so keep HTML lines unindented:
+// four leading spaces would turn a line into a code block.
+const gh = "https://github.com/traitecoevo/";
+%>
+<div class="cards">
+<% for (const t of items) {
+const repoUrl = (t.repo && !t.private) ? gh + t.repo : "";
+const mainUrl = t.home || repoUrl;
+%>
+<article class="card">
+<div class="card-top">
+<% if (t.logo) { %><img class="logo" src="assets/logos/<%- t.logo %>" alt="" width="52" height="60" loading="lazy"><% } else { %><span class="tile" aria-hidden="true"><%= String(t.name).slice(0, 2) %></span><% } %>
+<div class="card-title">
+<h3><% if (mainUrl) { %><a href="<%- mainUrl %>"><%= t.name %></a><% } else { %><%= t.name %><% } %></h3>
+<p class="meta"><% if (t.kind) { %><span class="kind"><%= t.kind %></span><% } %><% if (t.status) { %><span class="status status-<%- t.status %>"><%= t.status %></span><% } %></p>
+</div>
+</div>
+<p class="desc"><%= t.description %></p>
+<p class="links"><% if (t.home) { %><a href="<%- t.home %>"><%= t["home_label"] || "Docs" %></a><% } %><% for (const l of (t.links || [])) { %><a href="<%- l.url %>"><%= l.label %></a><% } %><% if (repoUrl) { %><a href="<%- repoUrl %>">GitHub</a><% } %><% if (t.private) { %><span class="private">Not yet public</span><% } %><% if (t.cran) { %><a href="https://cran.r-project.org/package=<%- t.name %>">CRAN</a><% } %><% if (t.universe) { %><a href="https://traitecoevo.r-universe.dev/<%- t.name %>">R-universe</a><% } %></p>
+</article>
+<% } %>
+</div>

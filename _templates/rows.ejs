@@ -1,0 +1,9 @@
+<%
+// Compact list of repositories: name, description, optional docs (url) and paper links.
+// Keep HTML lines unindented: Quarto runs this output through Markdown.
+%>
+<ul class="rows">
+<% for (const i of items) { %>
+<li><a class="row-name" href="https://github.com/traitecoevo/<%- i.repo %>"><%= i.name %></a><span class="row-desc"><%= i.description %></span><span class="row-links"><% if (i.url) { %><a href="<%- i.url %>">Docs</a><% } %><% if (i.paper) { %><a href="<%- i.paper %>">Paper</a><% } %></span></li>
+<% } %>
+</ul>

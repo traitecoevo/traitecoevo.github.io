@@ -1,0 +1,21 @@
+project:
+  type: website
+  output-dir: _site
+  resources:
+    - assets/
+
+website:
+  title: traitecoevo
+  site-url: https://traitecoevo.github.io
+  description: Open data, models and software for trait-based plant ecology and evolution, from the joint labs of Daniel Falster and Will Cornwell at UNSW Sydney.
+
+format:
+  html:
+    # No Bootstrap theme: the site uses its own stylesheet, header and footer.
+    minimal: true
+    page-layout: custom
+    anchor-sections: false
+    css: assets/style.css
+    include-in-header: _partials/head.html
+    include-before-body: _partials/header.html
+    include-after-body: _partials/footer.html

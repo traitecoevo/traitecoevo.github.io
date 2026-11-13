@@ -1,0 +1,50 @@
+# Retired packages: shown as a compact list under Apps & packages.
+# Each item: name, repo (under github.com/traitecoevo), description, and optional `paper` (a DOI URL) or `url` (docs).
+
+- name: fungaltraits
+  repo: fungaltraits
+  description: A dynamic database of fungal trait measurements.
+- name: taxonlookup
+  repo: taxonlookup
+  description: A versioned, dynamically updating taxonomic lookup table for land plants.
+  paper: https://doi.org/10.1111/2041-210X.12517
+- name: growthform
+  repo: growthform
+  description: Versioned growth-form data for the world's vascular plants.
+- name: phyndr
+  repo: phyndr
+  description: Maximise the overlap between trait data and phylogenies.
+  paper: https://doi.org/10.1111/2041-210X.12517
+- name: datastorr
+  repo: datastorr
+  description: Simple data versioning and distribution through GitHub releases (rOpenSci).
+  url: https://docs.ropensci.org/datastorr
+- name: versioned_data_template
+  repo: versioned_data_template
+  description: The minimum set of tools to set up and distribute a versioned dataset.
+- name: ksi
+  repo: ksi
+  description: Find distinctive clades with the Kolmogorov–Smirnov importance statistic.
+  paper: https://doi.org/10.1111/1365-2745.12208
+- name: traitfill
+  repo: traitfill
+  description: Estimate the state of unsampled species for binary traits.
+  paper: https://doi.org/10.1111/1365-2745.12260
+- name: Revolve
+  repo: Revolve
+  description: An adaptive dynamics toolkit for R.
+- name: katana_launch_R
+  repo: katana_launch_R
+  description: Launch series of R jobs on UNSW's Katana HPC cluster.
+- name: stan_crossval_demo
+  repo: stan_crossval_demo
+  description: An example workflow for efficient k-fold cross-validation with Stan.
+- name: dockertest
+  repo: dockertest
+  description: Run R package tests in Docker containers.
+- name: rrqueue
+  repo: rrqueue
+  description: A distributed task queue for R, using Redis.
+- name: stateliner
+  repo: stateliner
+  description: Connect R to the stateline distributed MCMC engine.

@@ -1,0 +1,100 @@
+# Cards for the Apps & packages section of index.qmd (current tools), in display order.
+# Fields are documented in data/austraits.yml.
+
+- name: infinitylists
+  kind: R package · Web app
+  status: stable
+  description: Generate place-based species lists for anywhere in the world, from collection data and iNaturalist records in the ALA and GBIF.
+  repo: infinitylists
+  home: https://unsw.shinyapps.io/infinitylists/
+  home_label: Web app
+  logo: infinitylists.png
+  universe: true
+- name: smatr
+  kind: R package
+  status: stable
+  description: Estimation and inference for allometric lines by (standardised) major axis regression.
+  repo: smatr
+  home: https://traitecoevo.github.io/smatr/
+  logo: smatr.png
+  cran: true
+  universe: true
+- name: hmde
+  kind: R package
+  status: stable
+  description: Hierarchical Bayesian models that estimate differential-equation parameters, such as growth rates, from repeated measurements.
+  repo: hmde
+  home: https://traitecoevo.github.io/hmde/
+  logo: hmde.png
+  cran: true
+  universe: true
+- name: litterfitter
+  kind: R package
+  status: stable
+  description: Fit and compare alternative models for single-cohort litter decomposition data.
+  repo: litterfitter
+  home: https://traitecoevo.github.io/litterfitter/
+  logo: litterfitter.png
+  cran: true
+  universe: true
+- name: saltbush
+  kind: R package
+  status: stable
+  description: Process drone imagery to calculate spectral diversity, linking diversity seen from the sky with diversity on the ground.
+  repo: saltbush
+  home: https://traitecoevo.github.io/saltbush/
+  logo: saltbush.png
+- name: earthtones
+  kind: R package
+  status: stable
+  description: Derive a colour palette from satellite imagery of any location on Earth.
+  repo: earthtones
+  home: https://traitecoevo.github.io/earthtones/
+  cran: true
+- name: baad.data
+  kind: Data package
+  status: stable
+  description: The Biomass And Allometry Database (BAAD) for woody plants, delivered as a versioned R package.
+  repo: baad.data
+  universe: true
+  links:
+  - label: Paper
+    url: https://doi.org/10.1890/14-1889.1
+- name: leaf13C
+  kind: Data package
+  status: stable
+  description: A global dataset of bulk leaf δ¹³C values.
+  repo: leaf13C
+  universe: true
+- name: bmsma
+  kind: R package
+  status: experimental
+  description: Bayesian multilevel fits of standardised major axis lines to bivariate data.
+  repo: bmsma
+  universe: true
+- name: rabbit
+  kind: R package
+  status: developing
+  description: Standardise raw tri-axial accelerometer data and extract metrics of movement dynamics.
+  repo: rabbit
+- name: birdnetprocess
+  kind: R package
+  status: developing
+  description: Process and visualise the large volumes of detections produced by BirdNET.
+  repo: birdnetprocess
+- name: ecoacoustic_utilities
+  kind: R package
+  status: developing
+  description: Download and analyse ecoacoustic recordings from iNaturalist and the Atlas of Living Australia.
+  repo: ecoacoustic_utilities
+  home: https://traitecoevo.github.io/ecoacoustic_utilities/
+- name: perch-head
+  kind: Python
+  status: experimental
+  description: Train and run custom classifier heads on Google Perch embeddings, for recognising species beyond Perch's own vocabulary.
+  repo: perch-head
+- name: score-ensemble
+  kind: Python
+  status: experimental
+  description: Parameter-free, score-level ensembling of two acoustic detectors.
+  repo: score-ensemble

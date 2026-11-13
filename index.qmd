@@ -1,0 +1,200 @@
+---
+pagetitle: "traitecoevo · the Cornsters"
+description: "Open data, models and software for trait-based plant ecology and evolution, from the joint labs of Daniel Falster and Will Cornwell at UNSW Sydney."
+# Each listing fills one card grid or list below. The tools themselves live in data/*.yml;
+# the section headings and blurbs are written in this file.
+listing:
+  - id: austraits-tools
+    contents: data/austraits.yml
+    template: _templates/cards.ejs
+    sort: false
+    page-size: 500
+    filter-ui: false
+    sort-ui: false
+  - id: plant-tools
+    contents: data/plant.yml
+    template: _templates/cards.ejs
+    sort: false
+    page-size: 500
+    filter-ui: false
+    sort-ui: false
+  - id: havplot-tools
+    contents: data/havplot.yml
+    template: _templates/cards.ejs
+    sort: false
+    page-size: 500
+    filter-ui: false
+    sort-ui: false
+  - id: packages-tools
+    contents: data/packages.yml
+    template: _templates/cards.ejs
+    sort: false
+    page-size: 500
+    filter-ui: false
+    sort-ui: false
+  - id: retired-list
+    contents: data/retired.yml
+    template: _templates/rows.ejs
+    sort: false
+    page-size: 500
+    filter-ui: false
+    sort-ui: false
+  - id: papers-list
+    contents: data/papers.yml
+    template: _templates/rows.ejs
+    sort: false
+    page-size: 500
+    filter-ui: false
+    sort-ui: false
+---
+
+```{=html}
+<section class="hero">
+  <div class="wrap hero-inner">
+    <p class="eyebrow">Trait Ecology &amp; Evolution · UNSW Sydney</p>
+    <h1>Open tools for understanding plants through their&nbsp;traits.</h1>
+    <p class="lede">We are the Cornsters: the joint labs of Profs <a href="https://danielfalster.com/">Daniel Falster</a> and <a href="https://willcornwell.org/">Will Cornwell</a> at UNSW Sydney. Our mission is to understand how plant traits shape ecology and evolution, from single leaves to whole floras. We build the open data, models and software that work needs, and share them so that others can use them too.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#austraits">Explore the tools</a>
+      <a class="btn" href="https://traitecoevo.r-universe.dev">Install from R-universe</a>
+    </div>
+    <ul class="jump" aria-label="Sections">
+      <li><a href="#austraits">AusTraits family</a></li>
+      <li><a href="#plant">plant family</a></li>
+      <li><a href="#havplot">HAVPlot family</a></li>
+      <li><a href="#packages">Apps &amp; packages</a></li>
+      <li><a href="#papers">Papers &amp; code</a></li>
+    </ul>
+  </div>
+</section>
+```
+
+::::: {#austraits .family .family-austraits}
+:::: wrap
+::: family-head
+<p class="tagline"><span class="num">01</span>Plant trait data</p>
+
+<h2>AusTraits family</h2>
+
+AusTraits is an open, curated database of traits for the Australian flora, harmonised from hundreds of sources. Around it sit the tools that build it, define its traits, resolve its plant names and serve its data.
+
+::: family-links
+[austraits.org →](https://austraits.org) [Paper →](https://doi.org/10.1038/s41597-021-01006-6)
+:::
+:::
+
+::: {#austraits-tools}
+:::
+::::
+:::::
+
+::::: {#plant .family .family-plant}
+:::: wrap
+::: family-head
+<p class="tagline"><span class="num">02</span>Vegetation models</p>
+
+<h2>plant family</h2>
+
+The plant model simulates how traits shape the growth, competition and evolution of plants in forests. The family around it adds documentation, community assembly, site and species set-up, leaf physiology, fire and visualisation.
+
+::: family-links
+[Overstorey guide →](https://traitecoevo.github.io/overstorey/) [Paper →](https://doi.org/10.1111/2041-210X.12525)
+:::
+:::
+
+::: {#plant-tools}
+:::
+::::
+:::::
+
+::::: {#havplot .family .family-havplot}
+:::: wrap
+::: family-head
+<p class="tagline"><span class="num">03</span>Vegetation plot data</p>
+
+<h2>HAVPlot family</h2>
+
+HAVPlot, the Harmonised Australian Vegetation Plot dataset, brings vegetation plot surveys from across Australia into one compilation of more than 200,000 plots. We are rebuilding it as an open, documented workflow that does for plot data what AusTraits does for trait data. The repositories will open as the work matures.
+
+::: family-links
+[Paper →](https://doi.org/10.1111/ecog.06426)
+:::
+:::
+
+::: {#havplot-tools}
+:::
+::::
+:::::
+
+::::: {#packages .family}
+:::: wrap
+::: family-head
+<p class="tagline"><span class="num">04</span>Everything else</p>
+
+<h2>Apps &amp; packages</h2>
+
+Standalone apps, R and Python packages, and data packages for statistics, remote sensing, ecoacoustics and more.
+:::
+
+::: {#packages-tools}
+:::
+
+<details class="archive">
+<summary><h3>Retired packages</h3></summary>
+<p class="note">Still public and citable, but no longer actively developed.</p>
+
+::: {#retired-list}
+:::
+
+</details>
+::::
+:::::
+
+::::: {#papers .family}
+:::: wrap
+::: family-head
+<p class="tagline"><span class="num">05</span>Reproducible research</p>
+
+<h2>Papers &amp; code</h2>
+
+Papers whose analyses you can reproduce from the code and data in a public repository. For full publication lists, see our Google Scholar profiles.
+
+::: family-links
+[Daniel Falster on Google Scholar →](https://scholar.google.com/citations?user=QXMISwEAAAAJ) [Will Cornwell on Google Scholar →](https://scholar.google.com/citations?user=jYQfwwkAAAAJ)
+:::
+:::
+
+::: {.archive .archive-flat}
+::: {#papers-list}
+:::
+:::
+::::
+:::::
+
+::::: {#about .about}
+:::: {.wrap .about-grid}
+::: {}
+<h2>About</h2>
+
+traitecoevo is the shared GitHub home of the Cornsters (**Corn**well + Fal**ster**): the labs of Daniel Falster and Will Cornwell at UNSW Sydney, with our students, postdocs and collaborators. The tools here grew out of our research, and many are now used well beyond it.
+
+Current and past lab members are listed on our lab websites:
+
+[Falster lab →](https://danielfalster.com/members){.btn-outline} [Cornwell lab →](https://willcornwell.org/){.btn-outline}
+:::
+
+::: install
+<h3>Install our R packages</h3>
+
+Most of our R packages are built on [R-universe](https://traitecoevo.r-universe.dev), so you can install them without extra tools:
+
+```r
+install.packages(
+  "austraits",
+  repos = c("https://traitecoevo.r-universe.dev",
+            "https://cloud.r-project.org")
+)
+```
+:::
+::::
+:::::
