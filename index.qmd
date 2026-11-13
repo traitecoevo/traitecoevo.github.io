@@ -1,5 +1,5 @@
 ---
-pagetitle: "traitecoevo · the Cornsters"
+pagetitle: "Trait Ecology & Evolution · the Cornsters"
 description: "Open data, models and software for trait-based plant ecology and evolution, from the joint labs of Daniel Falster and Will Cornwell at UNSW Sydney."
 # Each listing fills one card grid or list below. The tools themselves live in data/*.yml;
 # the section headings and blurbs are written in this file.

@@ -17,8 +17,7 @@
   paper: https://doi.org/10.1111/2041-210X.12517
 - name: datastorr
   repo: datastorr
-  description: Simple data versioning and distribution through GitHub releases (rOpenSci).
-  url: https://docs.ropensci.org/datastorr
+  description: Simple data versioning and distribution through GitHub releases.
 - name: versioned_data_template
   repo: versioned_data_template
   description: The minimum set of tools to set up and distribute a versioned dataset.
